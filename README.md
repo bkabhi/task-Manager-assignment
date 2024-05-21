@@ -1,41 +1,114 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Task Management Application
+
+This is a simple task management application built using React.js, Next.js, TypeScript, Redux, and Tailwind CSS. The application allows users to:
+
+- Display a list of tasks with their title and completion status.
+- Add new tasks to the list.
+- Toggle the completion status of tasks.
+- Delete tasks from the list.
+- Persist tasks data even after a page refresh using `localStorage`.
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Available Scripts](#available-scripts)
+- [Dependencies](#dependencies)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Getting Started
 
-First, run the development server:
+These instructions will help you set up the project on your local machine.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Prerequisites
+
+Make sure you have Node.js and npm installed. You can download them from [nodejs.org](https://nodejs.org/).
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/bkabhi/task-Manager-assignment.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd task-Manager-assignment
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and navigate to `http://localhost:3000`.
+
+## Project Structure
+
+```
+my-task-app/
+├── components/
+│   ├── Task.tsx
+│   └── TaskList.tsx
+├── pages/
+│   └── index.tsx
+│   └── _app.tsx
+├── redux/
+│   ├── actions.ts
+│   ├── reducers.ts
+│   └── store.ts
+├── styles/
+│   └── globals.css
+├── .gitignore
+├── package.json
+├── tailwind.config.js
+├── postcss.config.js
+├── tsconfig.json
+└── next.config.js
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Available Scripts
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+In the project directory, you can run:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- `npm run dev`: Runs the app in the development mode. Open `http://localhost:3000` to view it in your browser.
+- `npm run build`: Builds the app for production to the `build` folder.
+- `npm run start`: Starts the Node.js server for the built app.
+- `npm run lint`: Runs ESLint to lint the code.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Dependencies
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Redux](https://redux.js.org/)
+- [React Redux](https://react-redux.js.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome! Please open an issue or submit a pull request for any changes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# task-Manager-assignment
+This `README.md` file provides a clear overview of the project, how to set it up, the structure of the project, available scripts, dependencies, and instructions for contributing. Feel free to adjust the repository URL and any other details as needed.
