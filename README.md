@@ -16,6 +16,7 @@ This is a simple task management application built using React.js, Next.js, Type
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
 - [License](#license)
+- [Live Demo](#live-demo)
 
 ## Getting Started
 
@@ -109,6 +110,10 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Live Demo
+
+Check out the live demo of the application [here](https://task-manager-assignment-bkabhi.netlify.app).
 ```
 
 This `README.md` file provides a clear overview of the project, how to set it up, the structure of the project, available scripts, dependencies, and instructions for contributing. Feel free to adjust the repository URL and any other details as needed.
